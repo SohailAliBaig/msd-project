@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: none;
+    list-style: none;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;  
+    backdrop-filter: blur(10px); 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                 0 0 50px orange;
+    transform: scale(1.1);
+}
+span {
+    color: orangered;
+}
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover {
+    background-color: orangered; 
+    box-shadow: 0 0 25px orangered; 
+    color: white
+}
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 42px;
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1 {
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black; 
+}
+
+.btn-2 {
+    padding: 15px 28px;
+    background-color: orangered; 
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: orangered;
+}
+.img-box img{
+    border-radius: 50%;
+    width: 550px;
+
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orangered; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;  
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+
+.about-img img {
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px orangered, 0 0 50px orangered; /* Corrected box-shadow syntax */
+    border-radius: 50%;
+}
+
+.about-content h2 {
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+
+
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+.footer {
+    background-color: rgb(240, 248, 255);
+    padding: 40px 0;
+    text-align: center; 
+}
+
+.social {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+}
+.social i:hover{
+  transform: scale(1.5);  
+}
+
+.social i {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0 15px; 
+}
+
+.list {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; /* Allows items to wrap on smalle
+    padding: 20px 0;
+}
+
+.list li {
+    margin: 0 15px; /* Adds space between list items */
+}
+
+.copyright {
+    margin-top: 20px;
+    color: black; /* Adjust this color to match your theme */
+}
+
+
+.education {
+    background-color: #f1f1f1;
+    padding: 12% 8%;
+    text-align: center;
+}
+
+.education .heading {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 2em;
+}
+
+.education .heading span {
+    color: orangered;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.education-item {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+    font-size: 24px;
+    color: orangered;
+    margin-bottom: 0.5em;
+}
+
+.education-item p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 1em;
+}
+#mess{
+  width:700px;
+  border-radius:15px
+  
+}
+ footer{
+    background-color: rgb(240, 248, 255);
+ }
+.social i{
+    
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+}
+
+.projects {
+    padding: 12% 8%;
+    background-color: white; /* You can adjust the background color as needed */
+    text-align: center;
+}
+
+.projects-content h2 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 2em;
+}
+
+.projects-content h2 span {
+    color: orangered;
+}
+
+.projects-content p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 3em;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: rgb(241, 241, 241);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust the width as needed */
+    text-align: left;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    color: orangered;
+    margin-bottom: 0.5em;
+}
+
+.project-item p {
+    font-size: 18px;
+    color: black;
+}
